@@ -1,5 +1,9 @@
 # Cloud Practitioner
 
+# What is Cloud Computing
+
+Cloud Computing refers to on demand delivery of IT resources with pay-as-you-go pricing model.
+
 # Six Advantages of Cloud Computing
 
 * Trade capital expense for variable expense
