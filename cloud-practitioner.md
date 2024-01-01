@@ -31,7 +31,9 @@ Cloud Computing refers to on demand delivery of IT resources with pay-as-you-go 
 * backend servers for enterprise applications
 * small and medium databases
 
-## Compute optimized instances are ideal for **compute-bound applications** that benefit from **high-performance processors**.
+## Compute optimized instances 
+
+are ideal for **compute-bound applications** that benefit from **high-performance processors**.
 
 * Batch processing workloads
 * High performance web/app/gaming servers
