@@ -105,3 +105,19 @@ Elastic Load Balancing is a regional construct and automatically scalable and hi
 ELB works in combination with Auto-Scaling group. 
 When your EC2 fleet **auto-scales out**, as each instance comes online, the auto-scaling service just lets the Elastic Load Balancing service know that it's ready to handle the traffic, and off it goes. 
 Once the **fleet scales in**, ELB first stops all new traffic, and waits for the existing requests to complete, to drain out. Once they do that, then the auto-scaling engine can terminate the instances without disruption to existing customers.
+
+# AWS Global Infrastructure
+
+## Chossing AWS Region based on 4 business factors
+
+1. Complaince with data governance and legal requirements - For example, if your company requires all of its data to reside within the boundaries of the UK, you would choose the London Region. 
+2. Proximity to your customers - Select region that is close to your customers. If most of your customers live in Singapore, consider running out of the Singapore Region.
+3. Feature Availability - Let's say your developers wanted to play with our new quantum computing platform. Well then, they have to run in the Regions that already have the hardware installed.
+4. Pricing - Even when the hardware is equal in all regions, some locations are just more expensive to operate in.
+
+## Avalability Zones
+
+An Availability Zone is a single data center or a group of data centers within a Region. Availability Zones are located tens of miles apart from each other. This is close enough to have low latency (the time between when content requested and received) between Availability Zones. However, if a disaster occurs in one part of the Region, they are distant enough to reduce the chance that multiple Availability Zones are affected.
+
+The Northern California Region is called us-west-1, and this Region contains three AZs (1a, 1b, and 1c). Then, within each AZ there are three data centers.
+
