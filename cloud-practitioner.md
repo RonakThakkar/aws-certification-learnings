@@ -4,6 +4,8 @@
 
 Cloud Computing refers to on demand delivery of IT resources with pay-as-you-go pricing model.
 
+<br>
+
 # Six Advantages of Cloud Computing
 
 * Trade capital expense for variable expense
@@ -12,6 +14,8 @@ Cloud Computing refers to on demand delivery of IT resources with pay-as-you-go 
 * Increase speed and agility
 * Stop spending money running and maintaining data centers
 * Go global in minutes
+
+<br>
 
 # Global Infrastructure
 
@@ -23,10 +27,10 @@ Cloud Computing refers to on demand delivery of IT resources with pay-as-you-go 
 
 ### Choosing AWS Region based on 4 business factors
 
-1. Complaince with data governance and legal requirements - For example, if your company requires all of its data to reside within the boundaries of the UK, you would choose the London Region. 
-2. Proximity to your customers - Select region that is close to your customers. If most of your customers live in Singapore, consider running out of the Singapore Region.
-3. Feature Availability - Let's say your developers wanted to play with our new quantum computing platform. Well then, they have to run in the Regions that already have the hardware installed.
-4. Pricing - Even when the hardware is equal in all regions, some locations are just more expensive to operate in.
+1. **Complaince with data governance and legal requirements** - For example, if your company requires all of its data to reside within the boundaries of the UK, you would choose the London Region. 
+2. **Proximity to your customers** - Select region that is close to your customers. If most of your customers live in Singapore, consider running out of the Singapore Region.
+3. **Feature Availability** - Let's say your developers wanted to play with our new quantum computing platform. Well then, they have to run in the Regions that already have the hardware installed.
+4. **Pricing** - Even when the hardware is equal in all regions, some locations are just more expensive to operate in.
 
 ### Avalability Zones
 
@@ -34,7 +38,7 @@ An Availability Zone is a single data center or a group of data centers within a
 
 The Northern California Region is called us-west-1, and this Region contains three AZs (1a, 1b, and 1c). Then, within each AZ there are three data centers.
 
-<br><br>
+<br>
 
 # Amazon EC2 instance types
 
