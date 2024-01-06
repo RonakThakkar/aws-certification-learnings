@@ -145,7 +145,7 @@ Once the **fleet scales in**, ELB first stops all new traffic, and waits for the
 
 * **VPC**, or Virtual Private Cloud, is essentially your own private network in AWS, an isolated boundary from other customers in same AWS Cloud. VPC allows you to define your **private IP range** for your resources to be deployed.
 
-### Structuring VPC
+## Structuring VPC
 
 * **Subnets**. Within a virtual private cloud (VPC), you can **organize** your resources into subnets. Subnets are **chunks** of IP addresses in your VPC that allow you to group resources together.
 
@@ -153,17 +153,17 @@ You deploy Public and Private Subnets.
 * Public subnets contain resources that need to be accessible by the public over the internet, such as an online store’s website.
 * Private subnets contain resources that should be accessible only through your private network, such as a APIs / Database that contains customers’ personal information and order histories.
 
-### Connecting to VPC
+## Connecting to VPC
 
 * VPC is private by default with no doors opened yet. So you can deploy resources in there, but cannot access them from anywhere.
 * So you need to open-up the doors, lets see how.
 
-#### Public resources and Internet Gateway
+### Public resources and Internet Gateway
 
 In order to allow traffic from the public internet to flow into and out of your VPC, you must attach what is called an **internet gateway**, or IGW, to your VPC. 
 Internet Gateway is like Front-Door of your Coffee-Shop which is open for all customers.
 
-#### Private resources and Virtual Private Gateway
+### Private resources and Virtual Private Gateway
 
 Create VPN Connection (Encyrpted, Protected) between your internal corporate network (data center) and VPC.
 
@@ -172,13 +172,13 @@ Create VPN Connection (Encyrpted, Protected) between your internal corporate net
 * It allows you to create a VPN connection between a private network, like your on-premises data center or internal corporate network to your VPC. This VPN connection is over internet but **encrypted**.
 * Jump Host should also be deployed and accessed using these Private Connection and not using Public IPs.
 
-#### AWS Direct Connect
+### AWS Direct Connect
 
 Create **completely private, dedicated fiber connection** from your data center to AWS. So traffic does not go over internet and you get lowest possible latency with needed security compliance and no bandwidth issues.
 
-### Securing VPC resources
+## Securing VPC resources
 
-#### NACL
+### NACL
 
 A network ACL is a virtual firewall that controls inbound and outbound traffic at the subnet level.
 
@@ -187,7 +187,7 @@ A network ACL is a virtual firewall that controls inbound and outbound traffic a
 * Custom NACL creation is recomendded and it will by default have an explicit deny rule (like app NACLs). So all inbound and outbound traffic is denied until you add rules to specify which traffic to allow.
 * Network ACLs perform stateless packet filtering. They remember nothing and check packets that cross the subnet border each way: inbound and outbound.
 
-#### Security groups
+### Security groups
 
 A security group is a virtual firewall that controls inbound and outbound traffic to Amazon EC2 instance.
 
