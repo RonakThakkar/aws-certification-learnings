@@ -219,6 +219,11 @@ EFS is a scalable file system used with AWS Cloud services and on-premises resou
 * Its a regional resource. It stores data across multiple Avlability Zones.
 * As you add and remove files, Amazon EFS grows and shrinks automatically. It can scale on demand to petabytes without disrupting applications. No need to provision any more volumes.
 
+EBS VS EFS
+
+https://aws.amazon.com/efs/when-to-choose-efs/
+https://cloudnativenow.com/topics/cloudnativenetworking/using-ebs-and-efs-as-persistent-volume-in-kubernetes/#:~:text=EBS%20vs.,EFS&text=Amazon%20EFS%20provides%20a%20shared,to%20a%20dedicated%20storage%20volume.
+
 ## AWS S3
 
 * AWS S3 is a service that provides object-level storage. Amazon S3 stores data as objects in buckets.
