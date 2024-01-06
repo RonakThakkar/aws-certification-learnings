@@ -17,7 +17,7 @@ Cloud Computing refers to on demand delivery of IT resources with pay-as-you-go 
 
 <br>
 
-# Global Infrastructure
+# AWS Global Infrastructure
 
 * AWS Cloud infrastructure is built around AWS Regions and Availability Zones.
 * An AWS Region is a physical location in the world. Each Amazon Region is designed to be completely isolated from the other Amazon Regions.
