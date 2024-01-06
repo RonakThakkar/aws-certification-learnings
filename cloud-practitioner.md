@@ -139,7 +139,7 @@ ELB works in combination with Auto-Scaling group.
 When your EC2 fleet **auto-scales out**, as each instance comes online, the auto-scaling service just lets the Elastic Load Balancing service know that it's ready to handle the traffic, and off it goes. 
 Once the **fleet scales in**, ELB first stops all new traffic, and waits for the existing requests to complete, to drain out. Once they do that, then the auto-scaling engine can terminate the instances without disruption to existing customers.
 
-<br>
+<br><br>
 
 # AWS VPC (Virtual Private Cloud)
 
