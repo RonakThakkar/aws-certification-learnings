@@ -193,8 +193,106 @@ A security group is a virtual firewall that controls inbound and outbound traffi
 
 https://aws.amazon.com/products/networking/
 
-<br>
+<br><br>
 
 # AWS Storage
 
+## AWS EBS
+
+* Amazon EBS volumes are attached to EC2 instances.
+* EBS is Avalability Zone level resource. EBS stores data in single Avalability Zone.
+* To attach Amazon EC2 instances to an EBS volumme, both must reside in same Avalability Zone.
+* It's a hard drive.
+* You can save files on it. 
+* You can also run a **database** on top of it. 
+* Or store applications on it. 
+* If you provision a two terabyte EBS volume and fill it up, it doesn't automatically scale to give you more storage.
+
+<br>
+
+## AWS EFS
+
+EFS is a scalable file system used with AWS Cloud services and on-premises resources.
+
+* It is a true file system not just Hard-Drive that you attach to EC2.
+* Multiple clients / applications / EC2 instances can read/write data stored in shared file system through file paths.
+* Its a regional resource. It stores data across multiple Avlability Zones.
+* As you add and remove files, Amazon EFS grows and shrinks automatically. It can scale on demand to petabytes without disrupting applications. No need to provision any more volumes.
+
+## AWS S3
+
+* AWS S3 is a service that provides object-level storage. Amazon S3 stores data as objects in buckets.
+* You can upload any type of file to Amazon S3, such as images, videos, text files, and so on. 
+* Amazon S3 offers unlimited storage space. 
+* The maximum file size for an object in Amazon S3 is 5 TB.
+
+S3 Standard has a 99.999999999 percent avilability.
+Data is stored in 3 AZs.
+
+### S3 General Purpose Storage
+
+#### S3 Standard
+
+* Designed for frequently accessed data
+* Stores data in a minimum of three Availability Zones
+* Websites, content distribution, and data analytics
+* Higher Cost
+
+#### S3 Standard-Infrequent Access or S3 Standard-IA
+
+* Ideal for infrequently accessed data but requires rapid access
+* Stores data in a minimum of three Availability Zones
+* Perfect place to store backups, disaster recovery files, or any object that requires long-term storage. 
+* Similar to Amazon S3 Standard but has a lower storage price and higher retrieval price
+
+#### S3 OneZone-Infrequent Access or S3 OneZone-IA
+
+* Stores data in a single Availability Zone
+* Has a lower storage price than Amazon S3 Standard-IA
+
+Compared to S3 Standard and S3 Standard-IA, which store data in a minimum of three Availability Zones, S3 One Zone-IA stores data in a single Availability Zone. 
+
+This makes it a good storage class to consider if the following conditions apply:
+* You want to save costs on storage.
+* You can easily reproduce your data in the event of an Availability Zone failure.
+
+
+#### S3 Intelligent-Tiering
+
+* Ideal for data with unknown or changing access patterns
+* Requires a small monthly monitoring and automation fee per object
+
+In the S3 Intelligent-Tiering storage class, Amazon S3 monitors objects’ access patterns. If you haven’t accessed an object for 30 consecutive days, Amazon S3 automatically moves it to the infrequent access tier, S3 Standard-IA. If you access an object in the infrequent access tier, Amazon S3 automatically moves it to the frequent access tier, S3 Standard.
+
+<br>
+
+### S3 Glacier
+
+Archive data for Auditing purpose for several years.
+
+#### S3 Glacier Instant Retrieval
+
+* Works well for archived data that requires immediate access
+* Can retrieve objects within a **few milliseconds**
+  
+#### S3 Glacier Flexible Retrieval
+
+* Low-cost storage designed for data archiving
+* Able to retrieve objects within a **few minutes to hours**
+* low-cost storage solution for archival
+
+Upload objects directly to S3 Glacier Flexible Retrieval or using S3 Lifecycle policies.
+
+#### S3 Glacier Instant Deep Archive
+
+* Lowest-cost object storage class ideal for archiving
+* Data retrieval from **12 to 48 hours.**
+
+## 3S3 Outposts
+
+Creates S3 buckets on Amazon S3 Outposts
+
+#### S3 Lifecycle Policies
+
+Policies that you can create to move data automatically between tiers. For example, say we need to keep an object in S3 Standard for 90 days, and then we want to move it to S3 Standard-IA for the next 30 days. Then after 120 days total, we want to move it to S3 Glacier Flexible Retrieval. With Lifecycle policies, you create that configuration without changing your application code, and it will perform those moves for you automatically. It's another example of a managed AWS service, helping take that burden off you, so you can focus more on your business needs. 
 
