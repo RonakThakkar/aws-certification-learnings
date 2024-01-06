@@ -1,10 +1,12 @@
 # Cloud Practitioner
 
+<br>
+
 # What is Cloud Computing
 
 Cloud Computing refers to on demand delivery of IT resources with pay-as-you-go pricing model.
 
-<br>
+<br><br>
 
 # Six Advantages of Cloud Computing
 
@@ -15,9 +17,11 @@ Cloud Computing refers to on demand delivery of IT resources with pay-as-you-go 
 * Stop spending money running and maintaining data centers
 * Go global in minutes
 
-<br>
+<br><br>
 
 # AWS Global Infrastructure
+
+### Overview
 
 * AWS Cloud infrastructure is built around AWS Regions and Availability Zones.
 * An AWS Region is a physical location in the world. Each Amazon Region is designed to be completely isolated from the other Amazon Regions.
@@ -38,7 +42,7 @@ An Availability Zone is a single data center or a group of data centers within a
 
 The Northern California Region is called us-west-1, and this Region contains three AZs (1a, 1b, and 1c). Then, within each AZ there are three data centers.
 
-<br>
+<br><br>
 
 # Amazon EC2
 
@@ -122,6 +126,8 @@ are physical servers with Amazon EC2 instance capacity that is fully dedicated t
 Enables you to automatically add or remove Amazon EC2 instances in response to changing application demand.
 This helps to scale-out to handle high traffic OR scale-in to save costs.
 When you create an Auto Scaling group, you can set the **minimum, desired and maximum** number of Amazon EC2 instances
+
+<br>
 
 ## Elastic Load Balancing
 
