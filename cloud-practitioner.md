@@ -331,3 +331,87 @@ https://aws.amazon.com/getting-started/decision-guides/
 
 https://aws.amazon.com/architecture
 
+
+# AWS Monitoring
+
+### Mintoring Overview
+
+* Collecting metrics, evaluating those metrics over time, and then using them to make decisions or take actions, is what we call monitoring. 
+* Gain visibility across your applications, infrastructure, and services.
+
+Example, if an EC2 instance is being over-utilized, you can trigger a scaling event that automatically would launch another EC2 instance.
+If an application starts sending error responses at an unusually high rate, you can alert an employee to go take a look at what's going on.
+
+### CloudWatch
+
+**CloudWatch** is a service that enables you to monitor and manage various metrics and configure alarm actions based on data from those metrics.
+**CloudWatch Alarm**: You set a threshold for a metric, and when that threshold is reached CloudWatch can generate an alert and trigger an action.
+**CloudWatch Dashboard** enables you to access all the metrics for your resources from a single location.
+
+### CloudTrail
+
+**Cloud Trail** is a service that records API calls for your account. What, Who, When, How.
+**CloudTrail Insights**: This optional feature allows CloudTrail to automatically detect unusual API activities in your AWS account. 
+
+### AWS Trusted Advisor
+
+AWS has an automated advisor called AWS Trusted Advisor.
+
+AWS Trusted Advisor is a service inspects resources in your AWS environment against five pillars and provides real-time recommendations in accordance with AWS best practices.
+The pillars are cost optimization, performance, security, fault tolerance, and service limits.
+Trusted Advisor in real time runs through a series of checks for each pillar in your account, based on AWS best practices, and it compiles categorized items for you to look into, and you can view them directly in the AWS console.
+
+Some checks are free and are included in your AWS account, and others are available depending on the level of your support plan. 
+
+* if you don't have multi-factor authentication turned on for your root user, it's going to let you know.
+* If you have underutilized EC2 instances that might be able to be turned off in order to save money.
+* If you have EBS volumes that haven't been backed up in a reasonable amount of time, it will let you know that, too.
+
+
+# AWS Support Plans
+
+### Basic
+
+* Contact AWS for billing questions and service limit increases.
+* Limited selection of AWS Trusted Advisor checks.
+
+### Developer
+
+* Best practice guidance
+* Client-side diagnostic tools
+* Building-block architecture support, which consists of guidance for how to use AWS offerings, features, and services together
+
+### Business
+
+* Use-case guidance to identify AWS offerings, features, and services that can best support your specific needs
+* All AWS Trusted Advisor checks
+* Limited support for third-party software, such as common operating systems and application stack components
+
+### Enterprise On-Ramp
+
+* A **pool** of Technical Account Managers to provide proactive guidance and coordinate access to programs and AWS experts. Proactive support services, which are provided by a pool of Technical Account Managers.
+
+  * Consultative review and architecture guidance (one per year)
+  * Infrastructure Event Management support (one per year)
+  * Support automation workflows
+  * 30 minutes or less response time for business-critical issues
+
+* A Cost Optimization workshop (one per year)
+* A Concierge support team for billing and account assistance
+* Tools to monitor costs and performance through Trusted Advisor and Health API/Dashboard
+
+### Enterprise
+
+* A **designated** Technical Account Manager to provide proactive guidance and coordinate access to programs and AWS experts Proactive services, which are provided by a designated Technical Account Manager:
+
+  * Consultative review and architecture guidance
+  * Infrastructure Event Management support
+  * Cost Optimization Workshop and tools
+  * Support automation workflows
+  * 15 minutes or less response time for business-critical issues
+
+* Operations Reviews and tools to monitor health
+* Training and Game Days to drive innovation
+* A Concierge support team for billing and account assistance
+* Tools to monitor costs and performance through Trusted Advisor and Health API/Dashboard
+
