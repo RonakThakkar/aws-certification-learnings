@@ -301,3 +301,33 @@ Creates S3 buckets on Amazon S3 Outposts
 
 Policies that you can create to move data automatically between tiers. For example, say we need to keep an object in S3 Standard for 90 days, and then we want to move it to S3 Standard-IA for the next 30 days. Then after 120 days total, we want to move it to S3 Glacier Flexible Retrieval. With Lifecycle policies, you create that configuration without changing your application code, and it will perform those moves for you automatically. It's another example of a managed AWS service, helping take that burden off you, so you can focus more on your business needs. 
 
+<br><br>
+
+# Amazon RDS
+
+Automated patching, backups, redundancy, failover, disaster recovery, encryption at rest and in transit.
+
+### HA, Automatic fail-over, Multi-AZ deployments and scalability
+
+There are 2 types of deployment possible in RDS.
+
+**Multi-AZ DB instance deployment** - has **one** standby DB instance that provides failover support, but doesn't serve read traffic.
+
+In a Multi-AZ DB instance deployment, Amazon RDS automatically provisions and maintains a synchronous standby replica in a different Availability Zone.
+The primary DB instance is synchronously replicated across Availability Zones to a standby replica to provide data redundancy and minimize latency spikes during system backups. 
+
+**Multi-AZ DB cluster deployment** has **two** standby DB instances that provide failover support and can also serve read traffic.
+
+A Multi-AZ DB cluster deployment is a **semisynchronous**, high availability deployment mode of Amazon RDS with two readable standby DB instances.
+
+A Multi-AZ DB cluster has **1 writer DB instance and 2 reader DB instances** in three separate Availability Zones in the same AWS Region.
+
+With a Multi-AZ DB cluster, Amazon RDS replicates data from the writer DB instance to both of the reader DB instances using the DB engine's native replication capabilities.
+
+https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/multi-az-db-clusters-concepts.html
+https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PIOPS.StorageTypes.html#USER_PIOPS.UpgradeFileSystem
+
+https://aws.amazon.com/getting-started/decision-guides/
+
+https://aws.amazon.com/architecture
+
