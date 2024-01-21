@@ -415,3 +415,50 @@ Some checks are free and are included in your AWS account, and others are availa
 * A Concierge support team for billing and account assistance
 * Tools to monitor costs and performance through Trusted Advisor and Health API/Dashboard
 
+# AWS Cloud Adoption Framework
+
+# AWS Cloud Migration Strategies
+
+Six possible options when it comes to enterprise migration to cloud which is known as six R's.
+Once you've gone through the discovery phase and know exactly what you have in your existing environment, you decide which option among the six R's is the best fit based on time, cost, priority, criticality. 
+
+### Rehosting
+
+* Rehosting also known as “lift-and-shift” involves moving applications without changes. 
+* Customers save cost and can scale quickly.
+
+### Replatforming
+
+* Replatforming, also known as “lift, tinker, and shift,” involves making a **few cloud optimizations** to realize a tangible benefit.
+* Optimization is achieved without changing the core architecture of the application.
+* Migrate existing MySQL database and replatform it onto RDS MySQL / Aurora, without any code changes at all.
+
+### Refactoring/re-architecting
+
+* Refactoring (also known as re-architecting) involves reimagining how an application is architected and developed by using cloud-native features. 
+* Use case is to Innovate faster, add new features, cloud scale, or improve performance, better resiliency.
+
+### Repurchasing
+
+* Repurchasing involves moving from a traditional license to a software-as-a-service model. 
+* For example, a business might choose to implement the repurchasing strategy by migrating from a customer relationship management (CRM) system to Salesforce.com.
+
+### Retaining
+
+* Retaining consists of keeping applications that are critical for the business in the source environment. 
+* This might include applications that require major refactoring before they can be migrated, or, work that can be postponed until a later time.
+
+### Retiring
+Retiring is the process of removing applications that are no longer needed.
+
+
+<br><br>
+
+# AWS Well-Architected Framework
+
+Operational excellence
+Security
+Reliability
+Performance efficiency
+Cost optimization
+Sustainability
